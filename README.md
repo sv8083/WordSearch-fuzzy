@@ -9,9 +9,9 @@ endpoint:
 GET	/search?word=<input>
 where	input	is	the	(partial)	word	that	the	user	has	typed	so	far.	For	example,	if	the	user	is	looking	
 up	procrastination,	the	service	might	receive	this	sequence	of	requests:
-  GET	/search?word=pro
-  GET	/search?word=procr
-  GET	/search?word=procra
+                           GET	/search?word=pro
+                           GET	/search?word=procr
+                           GET	/search?word=procra
 
 The	response	should	be	a	JSON	array	containing	upto	25	results,	ranked	by	some	criteria	(see	
 below).
